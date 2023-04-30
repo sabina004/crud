@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Orders</title>
+    <style>
+      th, td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All orders:</h1>
+    <table>
+      	<tr>
+          <th>name</th>
+          <th>email</th>
+          <th>created at</th>
+    	</tr>
+      	{{range .}}
+      			<tr>
+              		<td>{{.CustomerName}}</td>
+                  <td>{{.CustomerEmail}}</td>
+                  <td>{{.OrderTimestamp}}</td>
+      			</tr>
+      	{{end}}
+    </table>
+    <br>
+    <button><a href="index.html">Go to main page</a></button>
+  </body>
+</html>

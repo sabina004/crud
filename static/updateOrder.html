@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+</head>
+<body>
+<div>
+  <h1>Update User</h1>
+  <form method="POST" action="/updateOrderByID">
+    <input name="id" type="hidden" value={{.OrderId}} />
+    <label>name</label><input name="name" type="text" value={{.CustomerName}} /> <br> <br>
+    <label>email</label><input name="email" type="email" value={{.CustomerEmail}} /> <br>
+    <label>total price</label><input name="price" type="text" value={{.TotalPrice}} /> <br> <br>
+    <input type="submit" value="submit" />
+  </form>
+</div>
+</body>
+</html>
